@@ -66,15 +66,25 @@ const PersonForm = (props) => {
             const message = { body: `${aPerson.name}'s number is updated!`, type: 'success' }
             setMessage(message)
           })
+          .catch(error => {
+            console.log(error)
+            const message = { body: `Information of ${newPerson.name} hasn't been updated on server!`, type: 'failed' }
+            setMessage(message)
+          })
       }
       return
     }
 
+    console.log(persons)
+    console.log("heyeyeyeye", newPerson)
+
     services.add(newPerson)
       .then(person => setPersons(persons.concat(person)))
-
-    const message = { body: `Added ${newPerson.name}!`, type: 'success' }
-    setMessage(message)
+      .catch(error => {
+        console.log(error)
+        const message = { body: `${error.response.data.error}`, type: 'failed' }
+        setMessage(message)
+      })
   }
 
   return (
@@ -129,6 +139,11 @@ const App = () => {
     services.getAll().then(persons => {
       console.log('promise fulfilled', persons)
       setPersons(persons)
+    }).catch(error => {
+      console.log(error)
+      const message = { body: `${error.response.data.error}`, type: 'failed' }
+      setMessage(message)
+      setPersons([])
     })
   }
 

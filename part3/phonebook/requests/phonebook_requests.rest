@@ -1,0 +1,61 @@
+### Get all
+GET http://localhost:8080/api/persons
+
+### Get 1 person
+GET http://localhost:8080/api/persons/63a703a968ad89e02b1fb111
+
+### Info
+GET http://localhost:8080/info
+
+### Delete 1 person
+DELETE http://localhost:8080/api/persons/63a703a968ad89e02b1fb1cc
+
+### Add 1 person with validation error
+POST http://localhost:8080/api/persons
+Content-Type: application/json
+
+{
+    "name": "ju",
+    "number": "04-66-272855"
+}
+
+###
+GET http://localhost:8080/api/undefine_path
+
+#### Update 1 person
+PUT http://localhost:8080/api/persons/63a80dbd9f6a077021e4003f
+Content-Type: application/json
+
+{
+    "name": "Duc Minh 4",
+    "number": "04-1234"
+}
+
+### Add 1 person with error
+POST http://localhost:8080/api/persons
+Content-Type: application/json
+
+{
+    "name": "Duc Minh Nguyen"
+}
+
+### Test Fly.io
+GET https://late-wood-6712.fly.dev/api/persons
+
+### 
+POST https://late-wood-6712.fly.dev/api/persons
+Content-Type: application/json
+
+{
+    "name": "Duc Minh Nguyen 2",
+    "number": "12-31-1241241212"
+}
+
+#### Update 1 person
+PUT https://late-wood-6712.fly.dev/api/persons/63a80dbd9f6a077021e4003f
+Content-Type: application/json
+
+{
+    "name": "Duc Minh 4",
+    "number": "04-1234"
+}
