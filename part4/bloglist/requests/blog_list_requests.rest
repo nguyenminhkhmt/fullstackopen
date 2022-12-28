@@ -1,0 +1,39 @@
+### Request Bloglist
+GET http://localhost:3003/api/blogs
+
+### Post new blog
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1pbmhuZDAxIiwiaWQiOiI2M2FkOGY2NmNhYTZmNmFmMDVlYjJiMTEiLCJpYXQiOjE2NzI0MTAyMjgsImV4cCI6MTY3MjQxMzgyOH0.Wnk-Ec0r-zKatYdrteM2o14iC1s28D-8XBzTl5Jko18
+
+{
+  "title": "TechCrunch 11",
+  "author": "TechCrunch.com",
+  "url": "https://techcrunch.com",
+  "likes": 0,
+  "userId": "63ad8f66caa6f6af05eb2b11"
+}
+
+### Post an invalid blog
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+  "title": "TechCrunch",
+  "userId": "63ad8f66caa6f6af05eb2b11"
+}
+
+### Delete a blog
+DELETE http://localhost:3003/api/blogs/63ac4612fdc34562c411de9a
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1pbmhuZDAxIiwiaWQiOiI2M2FkOGY2NmNhYTZmNmFmMDVlYjJiMTEiLCJpYXQiOjE2NzI0MTAyMjgsImV4cCI6MTY3MjQxMzgyOH0.Wnk-Ec0r-zKatYdrteM2o14iC1s28D-8XBzTl5Jko18
+
+### Update a blog
+PUT http://localhost:3003/api/blogs/63ad0191671c1cf4b1f1f83d
+Content-Type: application/json
+
+{
+  "title": "TechCrunch",
+  "author": "TechCrunch.com",
+  "url": "https://techcrunch.com",
+  "likes": 20
+}
