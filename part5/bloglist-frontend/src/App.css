@@ -1,0 +1,27 @@
+.message {
+  border-style: solid;
+  background-color: lightgray;
+  
+}
+
+.success {
+  border-color: green;
+  color: green;
+}
+
+.failed {
+  border-color: red;
+  color: red;
+}
+
+.blog {
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.blog:first-child {
+  margin-top: none;
+}

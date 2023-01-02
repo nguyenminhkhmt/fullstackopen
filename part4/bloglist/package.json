@@ -7,11 +7,13 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
     "lint": "eslint .",
-    "test": "NODE_ENV=test jest --verbose --runInBand --detectOpenHandles --forceExit"
+    "test": "NODE_ENV=test jest --verbose --runInBand --detectOpenHandles --forceExit",
+    "start:test": "NODE_ENV=test node index.js"
   },
   "author": "Duc Minh Nguyen",
   "license": "ISC",
   "devDependencies": {
+    "cypress": "^12.3.0",
     "eslint": "^8.30.0",
     "jest": "^29.3.1",
     "morgan": "^1.10.0",
