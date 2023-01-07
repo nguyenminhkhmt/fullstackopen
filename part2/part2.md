@@ -1,2 +1,3 @@
-## Part 2: Exercises 2.1 . - 2.20   
+## Part 2: Exercises 2.1 . - 2.20
+
 Done
