@@ -1,0 +1,26 @@
+### Request login
+POST http://localhost:3003/api/login
+Content-Type: application/json
+
+{
+  "username": "minhnd01",
+  "password": "12345678"
+}
+
+### Request login
+POST http://localhost:3003/api/login
+Content-Type: application/json
+
+{
+  "username": "minhnd03",
+  "password": "123"
+}
+
+### Request login with invalid pwd
+POST http://localhost:3003/api/login
+Content-Type: application/json
+
+{
+  "username": "minhnd01",
+  "password": "123456789"
+}

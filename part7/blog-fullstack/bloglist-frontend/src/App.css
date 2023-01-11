@@ -1,0 +1,44 @@
+.message {
+  border-style: solid;
+  background-color: lightgray;
+  
+}
+
+.success {
+  border-color: green;
+  color: green;
+}
+
+.failed {
+  border-color: red;
+  color: red;
+}
+
+.blog {
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.blog:first-child {
+  margin-top: none;
+}
+
+.menu {
+  background-color: lightblue;
+  margin-bottom: 10px;
+}
+
+Button {
+  width: auto;
+  margin: 5px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.custom_nav {
+  background-color: orange;
+  height: 44px;
+}
