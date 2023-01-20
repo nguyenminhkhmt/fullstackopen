@@ -26,8 +26,12 @@
 
 ## Part 6
 
-[6.1 - 6.21. Bloglist font-end](/part6/part6.md)
+[6.1 - 6.21. Redux](/part6/part6.md)
 
 ## Part 7
 
 [7.1 - 7.21. Bloglist font-end](/part7/part7.md)
+
+## Part 8
+
+[8.1 - 8.26. GraphQL](/part8/part8.md)

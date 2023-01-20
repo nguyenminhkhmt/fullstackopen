@@ -1,0 +1,12 @@
+.btn-active {
+  background: lightblue;
+}
+
+.btn-nav-active {
+  text-decoration: underline;
+}
+
+.nav-btn {
+  border: 0ch;
+  background: white;
+}
