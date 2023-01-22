@@ -35,3 +35,7 @@
 ## Part 8
 
 [8.1 - 8.26. GraphQL](/part8/part8.md)
+
+## Part 9
+
+[9.1 - 9.27. Typescript](/part9/part9.md)

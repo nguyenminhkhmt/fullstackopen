@@ -1,0 +1,71 @@
+### Ping
+GET http://localhost:3001/ping
+
+### Ping
+GET http://localhost:3001/api/ping
+
+### /api/diagnoses
+GET http://localhost:3001/api/diagnoses
+
+### /api/patients
+GET http://localhost:3001/api/patients
+
+### /api/patients/:id
+GET http://localhost:3001/api/patients/d2773336-f723-11e9-8f0b-362b9e155667
+
+### new patient
+POST http://localhost:3001/api/patients
+Content-Type: application/json
+
+{
+  "name": "Duc Minh Nguyen",
+  "dateOfBirth": "1986-07-09",
+  "gender": "male",
+  "ssn": "300179-98B",
+  "occupation": "New york city engineer"
+}
+
+### post new entry
+POST http://localhost:3001/api/patients/d2773336-f723-11e9-8f0b-362b9e155667/entries
+Content-Type: application/json
+
+# {
+#   "date": "2019-10-20",
+#   "specialist": "MD House 1111",
+#   "type": "HealthCheck",
+#   "description": "Yearly control visit. Cholesterol levels back to normal.",
+#   "healthCheckRating": 0
+# }
+
+# {
+#   "date": "2019-11-05",
+#   "type": "OccupationalHealthcare",
+#   "specialist": "MD House 1111",
+#   "employerName": "HyPD AAA",
+#   "diagnosisCodes": [
+#     "Z57.1",
+#     "Z74.3",
+#     "M51.2"
+#   ],
+#   "description": "Patient mistakenly found himself in a nuclear plant waste site without protection gear. Very minor radiation poisoning. ",
+#   "sickLeave": {
+#     "startDate": "2019-12-20",
+#     "endDate": "2019-08-28"
+#   }
+# }
+
+{
+  "date": "2015-01-02",
+  "type": "Hospital",
+  "specialist": "MD House",
+  "diagnosisCodes": [
+    "S62.5",
+    "Z74.3",
+    "M51.2"
+  ],
+  "description": "Healing time appr. 2 weeks. patient doesn't remember how he got the injury.",
+  "discharge": {
+    "date": "2015-01-16",
+    "criteria": "Thumb has healed."
+  }
+}
